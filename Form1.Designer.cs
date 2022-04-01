@@ -45,16 +45,16 @@ namespace SMTPClientServer
             this.txtSmtpServer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtPopServer = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -159,6 +159,7 @@ namespace SMTPClientServer
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(408, 20);
             this.txtTo.TabIndex = 5;
+            this.txtTo.Text = "hobbi2002@mail.ru";
             // 
             // label3
             // 
@@ -175,6 +176,7 @@ namespace SMTPClientServer
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(408, 20);
             this.txtFrom.TabIndex = 3;
+            this.txtFrom.Text = "pischevik@yandex.ru";
             // 
             // label2
             // 
@@ -191,6 +193,7 @@ namespace SMTPClientServer
             this.txtSmtpServer.Name = "txtSmtpServer";
             this.txtSmtpServer.Size = new System.Drawing.Size(408, 20);
             this.txtSmtpServer.TabIndex = 1;
+            this.txtSmtpServer.Text = "smtp.yandex.ru";
             // 
             // label1
             // 
@@ -221,71 +224,13 @@ namespace SMTPClientServer
             this.tabPage2.Text = "Recieve";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txtPopServer
+            // listBox1
             // 
-            this.txtPopServer.Location = new System.Drawing.Point(76, 11);
-            this.txtPopServer.Name = "txtPopServer";
-            this.txtPopServer.Size = new System.Drawing.Size(401, 20);
-            this.txtPopServer.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "POP Server";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 51);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "UserName";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Location = new System.Drawing.Point(76, 51);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(401, 20);
-            this.txtUserName.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 95);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Password";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(76, 92);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(401, 20);
-            this.txtPassword.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 264);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 13);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Message";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(10, 282);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(467, 128);
-            this.textBox2.TabIndex = 8;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(10, 127);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(467, 121);
+            this.listBox1.TabIndex = 10;
             // 
             // button2
             // 
@@ -297,13 +242,74 @@ namespace SMTPClientServer
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // listBox1
+            // textBox2
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(10, 127);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(467, 121);
-            this.listBox1.TabIndex = 10;
+            this.textBox2.Location = new System.Drawing.Point(10, 282);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(467, 128);
+            this.textBox2.TabIndex = 8;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 264);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Message";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(76, 92);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(401, 20);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.Text = ",fknbrf78";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 95);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Password";
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(76, 51);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(401, 20);
+            this.txtUserName.TabIndex = 3;
+            this.txtUserName.Text = "pischevik@yandex.ru";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 51);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "UserName";
+            // 
+            // txtPopServer
+            // 
+            this.txtPopServer.Location = new System.Drawing.Point(76, 11);
+            this.txtPopServer.Name = "txtPopServer";
+            this.txtPopServer.Size = new System.Drawing.Size(401, 20);
+            this.txtPopServer.TabIndex = 1;
+            this.txtPopServer.Text = "pop.yandex.ru";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "POP Server";
             // 
             // Form1
             // 
